@@ -509,7 +509,9 @@ p { margin: 0 0 1em; }
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(20,12,11,.65), rgba(61,12,15,.62) 48%, rgba(20,12,11,.42));
+  background:
+    linear-gradient(180deg, rgba(60,60,59,0) 48%, rgba(60,60,59,.12) 60%, rgba(60,60,59,.45) 74%, rgba(60,60,59,.82) 89%, var(--black) 100%),
+    linear-gradient(180deg, rgba(20,12,11,.65), rgba(61,12,15,.62) 48%, rgba(20,12,11,.42));
 }
 .cobertura-bg-img {
   position: absolute;
