@@ -501,7 +501,15 @@ p { margin: 0 0 1em; }
   padding: 100px 0;
   overflow: hidden;
   isolation: isolate;
-  background: var(--cream);
+  background: var(--black-deep);
+  color: var(--white);
+}
+.cobertura::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(20,12,11,.65), rgba(61,12,15,.62) 48%, rgba(20,12,11,.42));
 }
 .cobertura-bg-img {
   position: absolute;
@@ -509,16 +517,17 @@ p { margin: 0 0 1em; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 15%;
-  z-index: -1;
+  object-position: center 52%;
+  z-index: -2;
 }
 .cobertura-content {
   max-width: 640px;
   text-align: center;
   margin: 0 auto;
 }
-.cobertura-content h2 { font-size: clamp(2rem, 4.5vw, 3rem); color: var(--ink); }
-.cobertura-content p { color: var(--stone); font-size: 1.08rem; }
+.cobertura-content h2 { font-size: clamp(2rem, 4.5vw, 3rem); color: var(--white); }
+.cobertura-content p { color: var(--cream); font-size: 1.08rem; }
+.cobertura-content .eyebrow { color: #e7c59b; }
 
 /* ---------- Contacto ---------- */
 .contact-grid {
