@@ -353,7 +353,8 @@ p { margin: 0 0 1em; }
   background: rgba(140, 25, 29, .07);
 }
 .service-icon .icon-lg { width: 34px; height: 34px; }
-.service-icon-brown { background: rgba(189, 156, 101, .18); }
+.service-icon-animals { background: #fff; overflow: hidden; }
+.service-icon-animals img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .service-icon-sky { background: rgba(134, 194, 235, .2); }
 .service-icon-green { background: rgba(127, 165, 27, .16); }
 .service-card h3 { font-size: 1.2rem; color: var(--ink); }
